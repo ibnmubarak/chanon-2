@@ -1,0 +1,235 @@
+/* CSS for the chat page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    overflow: scroll;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .full-screen {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #username-form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background:  #3c2a219a;
+  }
+  
+  #username-form label, #message-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  #username-form input[type="text"], #message-form input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    background: var(--secondary-color);
+    color:var(--primary-color);
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #username-form button{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #username-form button:hover{
+    background-color: black;
+  }
+  
+  #chat {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    width: 90%;
+    border: none;
+    background-color: var(--primary-color);
+  }
+  
+  
+  #message-container{
+    margin-right: 20%;
+  }
+
+  #chat h2 {
+    text-align: center;
+  }
+  
+  #messages {
+    height: 95%;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 10px 10px 0px 10px;
+  }
+  
+  #messages div {
+    margin-bottom: 20px;
+    width: 81%;
+    color: var(--secondary-color);
+    text-align: center;
+
+  }
+
+  #messages div.msg {
+    width: inherit;
+    box-shadow: 0 4px 2px -2px gray;
+    text-align: left;
+    color: black;
+  }
+
+  #message-input {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  #send-button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgb(49, 49, 49) 1px 1px 1px 1px;
+  }
+  
+  #send-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+
+  ::-webkit-scrollbar{
+    width: 0%;
+  }
+
+
+
+
+.username b{
+  color: var(--secondary-color);
+  font-size: larger;
+  padding-right: 10px;
+  padding-left: 2px;
+  margin: 10px 0px 5px 0px
+  }
+
+.username i{
+  float: right;
+  color: black;
+  font-size: small;
+  padding: 1px 1px 1px 1px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+
+
+
+.message{
+  font-size: medium;
+  margin-bottom: 10px;
+  padding: 1px 0px 3px 2px;
+  color: var(--secondary-color);
+
+}
+
+
+
+@media only screen and (max-width: 768px){
+  #message-input{
+    width: calc(100% - 40px);
+  }
+  #send-button{
+    display: inline;
+  }
+  .username b{
+    font-size: medium;
+  }
+  .username i{
+    font-size: smaller;
+  }
+  #messages div{
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  #send-button{
+    display: none;
+  }
+
+  #particles-js{
+    height: calc(100vh - 20px);
+    display: flex;
+    align-items: center;
+  }
+
+
+  #username-form input[type="text"]{
+    width: 76%;
+    font-size: small;
+  }
+
+  #username-form{
+    width: 80%;
+    align-items: center;
+  }
+
+  #username-form button{
+    position: absolute;
+    align-items: center;
+    font-size: small;
+    padding: 10px 15px;
+    margin-left: 3px;
+  }
+
+  #username-form label{
+    font-size: small;
+  }
+  #messages div.msg {
+    
+    box-shadow: 0 2px 1px -1px gray;
+   
+  
+  }
+  .main-text{
+    font-size: smaller;
+    margin-bottom: 3px;
+  }
+}
+

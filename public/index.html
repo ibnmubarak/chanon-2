@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Chat App - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <p>ChatAnon</p>
+    </div>
+    <ul>
+      <li><a href="#main">Main</a></li>
+      <li><a href="#behind">Behind</a></li>
+    </ul>
+  </nav>
+  <div id="main" class="full-screen">
+    <div class="hero-image">
+      <img src="./pics/anon.jpg" alt="Hero Image" class="animate__animated animate__slideInLeft">
+    </div>
+    <div class="hero-content">
+      <h1 class="animate__animated animate__slideInDown">Secret Communication</h1>
+      <p> <span class="typing"></span> </p> <a href="./chat" class="hero-link animate__animated animate__zoomInUp"> Enter </a>
+    </div>
+  </div>
+  <div id="behind" class="full-screen">
+
+    <h2>About</h2>
+    <p><i> An initiative with a view to anonymizing communications using Onion routing protocols.
+        With no database associated, it minimizes the chance of data leaks.</i>
+      <br><br>
+      It takes no login at all,just choose a random name- Hit the chat.
+      <br> But lemme warn you - If your goddamn device itself is screwd with some keylogger, no measurment can hide your
+      ass.
+
+
+    </p>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.js"
+    integrity="sha512-ggJ7yQCnXifbDXFFfyNhegaNXkkPMP+0cxMDobX6pABvU4zrqD+NMXxrGoAK9iANboRjpR4ajwWHCCfJXJFpJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script async>
+    var options = {
+      strings: ['^2000 Whether you plan to overthrow the government,^1000 They wont know', 'Stay Anonymous with TOR routing ^2000', 'Unique encryption algorithm applied. ^2000'],
+      typeSpeed: 40,
+      loop: true
+    };
+  
+    var typed = new Typed('.typing', options);
+  </script>
+</body>
+
+</html>
